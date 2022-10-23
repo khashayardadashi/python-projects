@@ -1,1 +1,3 @@
-
+def EX1_1(x):
+    number=int(x)
+    return(number+1)
