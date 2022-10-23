@@ -15,4 +15,4 @@ def EX1_4 (number):
         return 'sunday'
     else:
         return 'Error'
-
+print(EX1_4(9))
