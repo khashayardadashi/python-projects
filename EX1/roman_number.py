@@ -21,3 +21,4 @@ def EX1_6 (number):
         return 'X'
     else:
         return 'Error'
+print(EX1_6(4))
