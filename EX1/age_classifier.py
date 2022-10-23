@@ -7,3 +7,4 @@ def EX1_5(person_age):
         return(f'he or she is a teenage')
     elif person_age>=20:
         return(f'he or she is an adualt')
+print(EX1_5(23))
