@@ -5,4 +5,5 @@ def EX1_3(side1,side2):
     16'''
     maximum_edge_of_a_triangle = (side1+side2)-1
     return maximum_edge_of_a_triangle
-    print(EX1_3(9,6))
+    
+print(EX1_3(9,6))
