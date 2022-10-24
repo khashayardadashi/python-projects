@@ -1,0 +1,9 @@
+def EX1_2 (base , height):
+    '''(int,int)-->float
+    This function calculates Area of triangle
+    EX1_2(9,8)
+    36'''
+    Area=((base*height)/2)
+    return(f'Area is {Area}')
+    print(EX1_2(9,8))
+    
