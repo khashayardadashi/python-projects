@@ -5,5 +5,6 @@ def EX1_1(number):
   7'''
   z=number+1
   return(f'number is {z}')
-  print(EX1_1(9))
+  
+print(EX1_1(9))
   
