@@ -1,0 +1,15 @@
+def EX1_5(person_age):
+    ''' (int)-->str
+    this fuction shows in which age group you fall
+    EX1_4(9)
+    he or she is a child'''
+    if person_age<=1 :
+        return(f'he or she is an infant')
+    elif person_age>1 and person_age<13:
+        return(f'he or she is a child')
+    elif person_age>=13 and person_age<20:
+        return(f'he or she is a teenage')
+    elif person_age>=20:
+        return(f'he or she is an adualt')
+        
+print(EX1_5(9))
