@@ -1,0 +1,9 @@
+def EX1_1(number):
+  '''(int)->int
+  This function return (number+1)
+  EX1_1(6)
+  7'''
+  z=number+1
+  return(f'number is {z}')
+  print(EX1_1(9))
+  
