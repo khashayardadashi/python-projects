@@ -1,0 +1,8 @@
+def EX1_3(side1,side2):
+    ''' (int,int)-->int
+    this function returns maximum edge of a triangle
+    EX1_3(9,8)
+    16'''
+    maximum_edge_of_a_triangle = (side1+side2)-1
+    return maximum_edge_of_a_triangle
+    print(EX1_3(9,6))
