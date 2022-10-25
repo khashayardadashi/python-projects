@@ -26,4 +26,4 @@ def EX1_6 (number):
     else:
         return 'Error'
         
-print(EX1_6(9))
+print(EX1_6(9))     
