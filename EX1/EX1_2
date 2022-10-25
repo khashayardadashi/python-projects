@@ -5,6 +5,5 @@ def EX1_2 (base , height):
     36.0'''
     Area=((base*height)/2)
     return(f'Area is {Area}')
-    
- print(EX1_2(9,8))
-    
+  
+print(EX1_2(6,8))  
