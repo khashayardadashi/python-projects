@@ -1,0 +1,14 @@
+def Ex3_6(list):
+	'''This function takes a list and displays a smiley face 
+	if there is a data from it 
+	that is equal to the distance of the largest data from the smallest data,
+	 otherwise a sad face.'''
+	if len (list)==0:
+		return ':/'
+	elif len (list)>0:
+		x=max(list)-min(list)
+		if x in list:
+			return ':)'
+		else:
+			return ':('
+
