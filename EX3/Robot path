@@ -11,10 +11,10 @@ def Ex3_3(list):
 	# robot is designed for only two destination:
 	#1:e,n,e,e,n
 	#2:w,n,w,n,w,w,n
-	e_des1=3
-	n_des1=2
-	n_des2=3
-	w_des2=4
+	e_1=3
+	n_1=2
+	n_2=3
+	w_2=4
 	for i in list:
 		if i=='n':
 			num_n+=1
@@ -24,7 +24,7 @@ def Ex3_3(list):
 			num_w+=1
 		elif i=='e':
 			num_e+=1
-	if (num_n ==n_des1 and num_e ==e_des1) or (num_w==w_des2 and num_n==n_des2):
+	if (num_n ==n_1 and num_e ==e_1) or (num_w==w_2 and num_n==n_2):
 		return True
 	else:
 		return False
