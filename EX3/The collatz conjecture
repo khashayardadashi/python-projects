@@ -1,0 +1,17 @@
+def Ex3_1(number):
+	''' (int)-->int
+	This function does some work on the numbers in each step,
+	depending on whether they are even or odd, 
+	until it becomes equal to one, 
+	and calculates the number of work steps for us.'''
+	c=0
+	if number>0 :
+		while number!=1:
+			if number%2==0:
+				number=number//2
+			elif number%2!=0:
+				number=number*3+1
+			c=c+1
+	else:
+		return " The number must be positive"
+	return c
