@@ -1,0 +1,11 @@
+def Ex3_4(a,b,c):
+	'''(list)-->boolean
+	This function takes a list
+	Add a to itself b times and Checks its divisibility
+	'''
+	for i in range (b):
+		a+=a
+	if a%c==0:
+		return True
+	else:
+		return False
