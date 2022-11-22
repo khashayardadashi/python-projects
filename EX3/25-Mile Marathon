@@ -1,0 +1,12 @@
+def Ex3_5(list):
+	'''(list)-->boolean
+	Adds the list data together, true if 25, false otherwise'''
+	total=0
+	for i in list:
+		if i<0:
+			abs(i)
+		total+=i
+	if total==25:
+		return True
+	else:
+		return False
