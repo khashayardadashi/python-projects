@@ -8,9 +8,9 @@ def Ex3_3(list):
 	num_w=0
 	num_e=0
 	num_n=0
-	# The robot can only pass these two destinations
-	#1 ["e", "n", "e", "e", "n"],
-	#2["w", "n", "w", "n", "w", "w", "n"]
+	# robot is designed for only two destination:
+	#1:e,n,e,e,n
+	#2:w,n,w,n,w,w,n
 	e_des1=3
 	n_des1=2
 	n_des2=3
