@@ -1,0 +1,30 @@
+def Ex3_3(list):
+	''' (list)-->boolean
+	This function takes a list that incloud [n,s,w,e]
+	If it returns True, the robot is on the right path,
+	 otherwise it has lost its way
+	'''
+	num_s=0
+	num_w=0
+	num_e=0
+	num_n=0
+	# The robot can only pass these two destinations
+	#1 ["e", "n", "e", "e", "n"],
+	#2["w", "n", "w", "n", "w", "w", "n"]
+	e_des1=3
+	n_des1=2
+	n_des2=3
+	w_des2=4
+	for i in list:
+		if i=='n':
+			num_n+=1
+		elif i=='s':
+			num_s+=1
+		elif i=='w':
+			num_w+=1
+		elif i=='e':
+			num_e+=1
+	if (num_n ==n_des1 and num_e ==e_des1) or (num_w==w_des2 and num_n==n_des2):
+		return True
+	else:
+		return False
