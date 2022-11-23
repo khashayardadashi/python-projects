@@ -3,7 +3,7 @@ def Ex3_2(list):
 	This function takes a list
     and returns the highest product of adjacent numbers in the list'''
 	list1=[]
-	for i in range (0,len(list)):
+	for i in range (0,len(list)-1):
 		a=list[i]*list[i+1]
 		list1.append(a)
 	return max(list1)
