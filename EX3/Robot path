@@ -1,31 +1,24 @@
-def Ex3_3(list):
+def Ex3_3(list1):
 	''' (list)-->boolean
 	This function takes a list that incloud [n,s,w,e]
 	If it returns True, the robot is on the right path,
-	 otherwise it has lost its way
+	otherwise it has lost its way
 	'''
-	s=0
-	w=0
-	e=0
-	n=0
-	# robot is designed for only two destination:
-	#1:e,n,e,e,n
-	#2:w,n,w,n,w,w,n
-	e_1=3
-	n_1=2
-	n_2=3
-	w_2=4
-	for i in list:
-		if i=='n':
-			n+=1
-		elif i=='s':
-			s+=1
-		elif i=='w':
-			w+=1
-		elif i=='e':
-			e+=1
-	if (n ==n_1 and e ==e_1) or (w==w_2 and n==n_2):
-		return True
-	else:
-		return False
-print(Ex3_3(['n','s','n','n','e','n','w','w','s','w','w','w','n'])
+	#robot is designed for only two destination:
+	#d1=['e','n','e','e','n']
+	#d2=['w','n','w','n','w','w','n']
+	list2=list(filter(lambda x: (x=='n') or (x=='w') or (x=='e'),list1))
+	a=list2.count('n')
+	b=list2.count('w')
+	c=list2.count('e')
+	if c<3:
+		if a>=3 and b>=4:
+			return True
+		else:
+			return False
+	elif b<4:
+		if a>=2 and c>=3:
+			return True
+		else:
+			return False
+print(Ex3_3(['n', 's', 'n', 'n','e', 'n','w','w','s','w','w','w','w','n']))
