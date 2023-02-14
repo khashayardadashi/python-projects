@@ -9,8 +9,6 @@ class Player(Human):
         super().__init__(name)
         self.l.append(self.name)
 
-
-
 #OBJECTS
 a1=Player('1')
 a2=Player('2')
@@ -34,7 +32,6 @@ a19=Player('19')
 a20=Player('20')
 a21=Player('21')
 a22=Player('22')
-
 
 #SEPRATE OBJECTS INTO TWO GROUPS
 a=[]
