@@ -1,8 +1,12 @@
 from statistics import mean
-class SCORES:
+class Scores:
     '''This class get list and excute some methodes on it'''
     def __init__(self,list):
         self.l=list
+    def __str__(self):
+        print(f'<class \'Scores'\>')
+    def __repr__(self):
+        print(f'{self.__class__.__name__}')
     @property
     def first_grade(self):
         a1=self.l.pop(0)
