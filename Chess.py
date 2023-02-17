@@ -70,4 +70,4 @@ def chess():
     elif KnightV==BishopV :
         return 'Niether of them can attack each other'
 
-print(chess())
+
