@@ -51,9 +51,6 @@ elif int(numberchap)%3==0 and int(numberchap) %5!=0:
     month=month+1
 
         
-    
-
-
 if year+(month/12)>23:
     print(f'The Gaurantee is valid for {(month%12)} month and Replacment Status is {shomaresh(d1)}')
 elif year+(month/12) <= 23:
