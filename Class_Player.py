@@ -52,31 +52,3 @@ while len(b)!=c:
 print('TaemB:',end='')
 for i in b:
     print(i,end=',')
-#--------------------------------------------
-class calculator_probility:
-    __pReceiving0=None
-    __pReceiving1=None
-    __pSending1 = None
-    __pSending0 = None
-    __pReceiving1Sending0 = None
-    __pReceiving0Sending1 = None
-    __pReceiving1Sending1 = None
-    __pReceiving0Sending0=None
-    def __init__(self,p,e,i,j):
-        if 0 <= p <= 1 and 0 <= e <= 1:
-            self.__pSending1 = p
-            self.__pSending0 = 1 - p
-            self.__pReceiving1Sending0 = e
-            self.__pReceiving0Sending1 = e
-            self.__pReceiving1Sending1 = 1 - e
-            self.__pReceiving0Sending0 = 1 - e
-            self.__pReceiving0=( self.__pReceiving0Given0 * self.__pSending0 + self.__pReceiving0Given1 * self.__pSending1)
-            self.__pReceiving1=( self.__pReceiving1Given0 * self.__pSending0 + self.__pReceiving1Given1 * self.__pSending1)
-            self.__pSending1Receiving0 = (self.__pReceiving0Sending1 * self.__pSending1) / self.__pReceiving0
-            self.__pSending0Receiving1 = (self.__pReceiving1Sending0 * self.__pSending0) / self.__pReceiving1
-            self.__pSending0Receiving0 = (self.__pReceiving0Sending0 * self.__pSending0) / self.__pReceiving0
-            self.__pSending1Receiving1 = (self.__pReceiving1Sending1 * self.__pSending1) / self.__pReceiving1
-            self.__allConditional=[[self.__pSending0Receiving0,  self.__pSending0Receiving1],[self.__pSending1Receiving0, self.__pSending1Receiving1]]
-            return self.__allConditional
-        else:
-            return "The value probability must be between 0 and 1"
