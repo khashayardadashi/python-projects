@@ -41,7 +41,7 @@ class Probabilitycalculator:
 
 class Probability_plot:
     @staticmethod
-    def create_plot(pSending1, color, i, j):
+    def create_plot(pSending1, color, i, j ,title):
         pError = np.arange(0.1,1.1,0.1)
 
         conditional_probability = []
@@ -49,32 +49,28 @@ class Probability_plot:
             conditional_probability.append(Probabilitycalculator.calculate_probability(p=pSending1,e=error,i=i,j=j))
 
         plt.plot(pError, conditional_probability,marker='o', color=color)
-
+        plt.title(title)
         plt.legend(["p = 0.1", "p = 0.5", "p = 0.9"])
         plt.xlabel("e")
 
     @staticmethod
     def figure():
         plt.figure(0)
-        plt.title("P[T0|R1]")
-        Probability_plot.create_plot(0.1, "#0000ff", i=0, j=1)
-        Probability_plot.create_plot(0.5, "#ff0000", i=0, j=1)
-        Probability_plot.create_plot(0.9, "#7fff00", i=0, j=1)
+        Probability_plot.create_plot(0.1, "#0000ff", i=0, j=1,title="P[T0|R1]")
+        Probability_plot.create_plot(0.5, "#ff0000", i=0, j=1,title="P[T0|R1]")
+        Probability_plot.create_plot(0.9, "#7fff00", i=0, j=1,title="P[T0|R1]")
         plt.figure(1)
-        plt.title("P[T0|R0]")
-        Probability_plot.create_plot(0.1, "#0000ff", i=0, j=0)
-        Probability_plot.create_plot(0.5, "#ff0000", i=0, j=0)
-        Probability_plot.create_plot(0.9, "#7fff00", i=0, j=0)
+        Probability_plot.create_plot(0.1, "#0000ff", i=0, j=0,title="P[T0|R0]")
+        Probability_plot.create_plot(0.5, "#ff0000", i=0, j=0,title="P[T0|R0]")
+        Probability_plot.create_plot(0.9, "#7fff00", i=0, j=0,title="P[T0|R0]")
         plt.figure(2)
-        plt.title("P[T1|R0]")
-        Probability_plot.create_plot(0.1, "#0000ff", i=1, j=0)
-        Probability_plot.create_plot(0.5, "#ff0000", i=1, j=0)
-        Probability_plot.create_plot(0.9, "#7fff00", i=1, j=0)
+        Probability_plot.create_plot(0.1, "#0000ff", i=1, j=0,title="P[T1|R0]")
+        Probability_plot.create_plot(0.5, "#ff0000", i=1, j=0,title="P[T1|R0]")
+        Probability_plot.create_plot(0.9, "#7fff00", i=1, j=0,title="P[T1|R0]")
         plt.figure(3)
-        plt.title("P[T1|R1]")
-        Probability_plot.create_plot(0.1, "#0000ff", i=1, j=1)
-        Probability_plot.create_plot(0.5, "#ff0000", i=1, j=1)
-        Probability_plot.create_plot(0.9, "#7fff00", i=1, j=1)
+        Probability_plot.create_plot(0.1, "#0000ff", i=1, j=1,title="P[T1|R1]")
+        Probability_plot.create_plot(0.5, "#ff0000", i=1, j=1,title="P[T1|R1]")
+        Probability_plot.create_plot(0.9, "#7fff00", i=1, j=1,title="P[T1|R1]")
         plt.show()
 
 show = Probability_plot()
