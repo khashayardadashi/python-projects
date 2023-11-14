@@ -7,7 +7,6 @@ class Probabilitycalculator:
 
     @staticmethod
     def calculate_probability(p, e, i, j):
-        if 0<=p and p<=1 and 0<=e and e<=1:
             pSending1 = p
             pSending0 = 1 - p
             pReceiving1Sending0 = e
@@ -39,8 +38,6 @@ class Probabilitycalculator:
             ]
 
             return conditional_prob[i][j]
-        else:
-            return "Erorr=> your value is not between 0 and 1"
 
 class Probability_plot:
     @staticmethod
